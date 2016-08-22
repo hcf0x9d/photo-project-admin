@@ -23,10 +23,3 @@ downloaded bulk in a zip folder.
 
 Currently I am rewriting this tool from the ground up to be more efficient,
 and easily portable.
-
-### Flat-File vs DB
-
-The original project was written to hit a database, but to make things simple
-for portability, I am switching to a flat-file approach.  Those who want a more
-secure system will want to switch back to a database, but I figure these are
-low-risk photo sessions for the most part, so high security is not a huge issue.
