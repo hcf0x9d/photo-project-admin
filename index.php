@@ -1,5 +1,28 @@
-<?php require 'views/gallery.header.inc.php'; ?>
+<?php
 
+// NOTE: To attempt to improve security, we should continue to use PHP sessions
+session_start();
+
+$viewTitle = "Home";
+
+require "models/config.php";
+require "controllers/functions.inc.php";
+
+require "views/part.header.inc.php";
+
+?>
+
+<!--
+
+TODO: Restructure to be a SPA for the user
+
+TODO: STEP 1 = User presented a login screen
+TODO: STEP 2 = User login successful or not...
+TODO: STEP 3 = User is presented with their gallery
+TODO: STEP 4 = User can view individual images and download the individual image or share it
+TODO: STEP 5 = User can download a zip of all images
+
+-->
 <section class="container_12">
 	<form action="POST" class="accessCode" id="accessCode">
 		<div class="accessCode_table">
@@ -19,8 +42,8 @@
 				<input class="btn-dark" type="submit" value="Go">
 			</div>
 		</div>
-		
-	</form>	
+
+	</form>
 </section>
 
 <script>

@@ -22,6 +22,11 @@ downloaded bulk in a zip folder.
 ## Work in Progress
 
 Currently I am rewriting this tool from the ground up to be more efficient,
-secure and easily portable.  I am reconsidering the use of a database, instead
-considering a flat-file approach. the OLD folder contains the original project,
-which was a hacked together tool for only my personal use.
+and easily portable.
+
+### Flat-File vs DB
+
+The original project was written to hit a database, but to make things simple
+for portability, I am switching to a flat-file approach.  Those who want a more
+secure system will want to switch back to a database, but I figure these are
+low-risk photo sessions for the most part, so high security is not a huge issue.
